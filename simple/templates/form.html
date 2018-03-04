@@ -1,0 +1,21 @@
+{% extends "generic.html" %}
+
+  {% block content %}
+    <form action="" method="post">
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.name.label }}
+        {{ form.name }}
+      </p>
+      <p>
+        {{ form.pref.label }}
+        {{ form.pref }}
+      </p>
+      <p>
+        {{ form.message.label }}
+        {{ form.message }}
+      </p>
+      <p>
+        {{ form.submit }}
+    </form>
+  {% endblock %}
